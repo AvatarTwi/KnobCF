@@ -1,0 +1,103 @@
+benchmark:
+  tpcc:
+    script:
+      collect_script: collect.sh
+    remote:
+      scriptdir: /opt/module/knob_estm/shell/tpcc/
+      datadir: /opt/module/pgsql/data/
+    local:
+      scriptdir: vm/shell/tpcc/
+      datadir: vm/data/tpcc/serverlog/
+      pickledir: vm/data/tpcc/pickle/
+      confdir: vm/conf/tpcc/
+      queriesdir: vm/queries/tpcc/
+  tpcc_test:
+    script:
+      collect_script: collect.sh
+    remote:
+      scriptdir: /opt/module/knob_estm/shell/tpcc/
+      datadir: /opt/module/pgsql/data/
+    local:
+      scriptdir: vm/shell/tpcc_test/
+      datadir: vm/data/tpcc_test/serverlog/
+      pickledir: vm/data/tpcc_test/pickle/
+      confdir: vm/conf/tpcc_test/
+      queriesdir: vm/queries/tpcc/
+  tpcc_best:
+    script:
+      collect_script: collect.sh
+      collect_partial_script: collect_partial.sh
+    remote:
+      scriptdir: /opt/module/knob_estm/shell/tpcc/
+      datadir: /opt/module/pgsql/data/
+    local:
+      scriptdir: vm/shell/tpcc/
+      datadir: vm1/data/tpcc_best/serverlog/
+      pickledir: vm1/data/tpcc_best/pickle/
+      confdir: vm1/conf/tpcc_best/
+      queriesdir: vm/queries/tpcc/
+  tpcc_uncertainty:
+    script:
+      collect_script: collect.sh
+      collect_partial_script: collect_partial.sh
+    remote:
+      scriptdir: /opt/module/knob_estm/shell/tpcc/
+      datadir: /opt/module/pgsql/data/
+    local:
+      scriptdir: vm/shell/tpcc_uncertainty/
+      datadir: vm/data/tpcc_uncertainty/serverlog/
+      pickledir: vm/data/tpcc_uncertainty/pickle/
+      confdir: vm/conf/tpcc_uncertainty/
+      queriesdir: vm/queries/tpcc/
+  tpch:
+    script:
+      collect_script: collect.sh
+      collect_partial_script: collect_partial.sh
+    remote:
+      scriptdir: /opt/module/knob_estm/shell/tpch/
+      datadir: /opt/module/pgsql/data/
+    local:
+      scriptdir: vm/shell/tpch/
+      datadir: vm/data/tpch/serverlog/
+      pickledir: vm/data/tpch/pickle/
+      confdir: vm/conf/tpch/
+      queriesdir: vm/queries/tpch/
+  tpch_best:
+    script:
+      collect_script: collect.sh
+      collect_partial_script: collect_partial.sh
+    remote:
+      scriptdir: /opt/module/knob_estm/shell/tpch/
+      datadir: /opt/module/pgsql/data/
+    local:
+      scriptdir: vm/shell/tpch/
+      datadir: vm1/data/tpch_best/serverlog/
+      pickledir: vm1/data/tpch_best/pickle/
+      confdir: vm1/conf/tpch_best/
+      queriesdir: vm1/queries/tpch/
+  tpch_test:
+    script:
+      collect_script: collect.sh
+    remote:
+      scriptdir: /opt/module/knob_estm/shell/tpch/
+      datadir: /opt/module/pgsql/data/
+    local:
+      scriptdir: vm/shell/tpch/
+      datadir: vm/data/tpch_test/serverlog/
+      pickledir: vm/data/tpch_test/pickle/
+      confdir: vm/conf/tpch_test/
+      queriesdir: vm/queries/tpch/
+  tpch_uncertainty:
+    script:
+      collect_script: collect.sh
+      collect_partial_script: collect_partial.sh
+    remote:
+      scriptdir: /opt/module/knob_estm/shell/tpch/
+      datadir: /opt/module/pgsql/data/
+    local:
+      scriptdir: vm/shell/tpch/
+      datadir: vm/data/tpch_uncertainty/serverlog/
+      pickledir: vm/data/tpch_uncertainty/pickle/
+      confdir: vm/conf/tpch_uncertainty/
+      queriesdir: vm/queries/tpch/
+

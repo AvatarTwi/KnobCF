@@ -1,0 +1,9 @@
+server:
+  host:
+    192.168.75.130
+  port:
+    22
+  root_name:
+    root
+  root_password:
+    hjfhjf0501
