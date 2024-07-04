@@ -3,7 +3,7 @@
 KnobCF is an uncertainty-based knob tuning method that improves the time-precision efficiency of the knob tuning process. 
 This is the implementation described in the paper: 
 
-KnobCF: Uncertainty-aware Knob Tuning.[PDF]()
+KnobCF: Uncertainty-aware Knob Tuning.[PDF](https://arxiv.org/abs/2407.02803)
 
 ![tuning_gj](https://typora-picpool-1314405309.cos.ap-nanjing.myqcloud.com/img/tuning_gj.png)
 
