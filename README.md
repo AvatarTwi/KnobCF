@@ -147,7 +147,14 @@ then run main.py
 If you find this repository useful in your work, please cite our paper:
 
 ```
-https://arxiv.org/abs/2407.02803
+@misc{yan2024knobcf,
+      title={KnobCF: Uncertainty-aware Knob Tuning}, 
+      author={Yu Yan, Junfang Huang, Hongzhi Wang, Jian Geng, Kaixin Zhang, Taoyu.},
+      year={2024},
+      eprint={2407.02803},
+      archivePrefix={arXiv},
+      primaryClass={cs.DB}
+}
 ```
 
 ## Code Citations
